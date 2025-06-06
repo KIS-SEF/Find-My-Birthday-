@@ -1,0 +1,65 @@
+/* Smooth gradient background: dark blue at bottom → light blue at top */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to top, #a0eaff, #003366);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full screen height */
+}
+
+/* Center content */
+.container {
+    padding: 40px;
+    width: 80%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+/* Bigger title */
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Make inputs appear on the same line */
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds space between inputs */
+    align-items: center; /* Ensures proper vertical alignment */
+}
+
+/* Adjusted input size */
+input {
+    padding: 8px;
+    font-size: 16px;
+    width: 120px; /* Small enough to fit side by side */
+    text-align: center;
+}
+
+/* Center the button and move it slightly lower */
+button {
+    padding: 12px 18px;
+    font-size: 20px;
+    margin-top: 20px; /* Push the button slightly lower */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Make the result text orange */
+#result {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: orange;
+}
